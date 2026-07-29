@@ -2473,6 +2473,27 @@
                     ]
                 },
                 {
+                    "Category": "Data",
+                    "MemberType": "Property",
+                    "Name": "TopInset",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "float"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
                     "Category": "Appearance",
                     "MemberType": "Property",
                     "Name": "UseBackpack",
@@ -4572,6 +4593,27 @@
                 {
                     "Category": "Appearance",
                     "MemberType": "Property",
+                    "Name": "AvoidCoreUI",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
                     "Name": "Visible",
                     "Security": {
                         "Read": "None",
@@ -5299,15 +5341,46 @@
             "Members": [
                 {
                     "MemberType": "Event",
+                    "Name": "PhysicsUpdated",
+                    "Parameters": [
+                        {
+                            "Name": "argument1",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "double"
+                            }
+                        }
+                    ],
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Event",
                     "Name": "PostRendered",
-                    "Parameters": [],
+                    "Parameters": [
+                        {
+                            "Name": "argument1",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "double"
+                            }
+                        }
+                    ],
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
                 },
                 {
                     "MemberType": "Event",
                     "Name": "PreRendered",
-                    "Parameters": [],
+                    "Parameters": [
+                        {
+                            "Name": "argument1",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "double"
+                            }
+                        }
+                    ],
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
                 },
@@ -8105,6 +8178,25 @@
                 },
                 {
                     "MemberType": "Function",
+                    "Name": "ClothingAsync",
+                    "Parameters": [
+                        {
+                            "Name": "id",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "int"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Class",
+                        "Name": "Clothing"
+                    },
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Function",
                     "Name": "DefaultCharacter",
                     "Parameters": [],
                     "ReturnType": {
@@ -10148,7 +10240,43 @@
                 },
                 {
                     "MemberType": "Event",
+                    "Name": "HealthChanged",
+                    "Parameters": [
+                        {
+                            "Name": "argument1",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "float"
+                            }
+                        },
+                        {
+                            "Name": "argument2",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "float"
+                            }
+                        }
+                    ],
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "Jumped",
+                    "Parameters": [],
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Event",
                     "Name": "Landed",
+                    "Parameters": [],
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "LeftGround",
                     "Parameters": [],
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -10157,6 +10285,36 @@
                     "MemberType": "Event",
                     "Name": "NavFinished",
                     "Parameters": [],
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "Seated",
+                    "Parameters": [
+                        {
+                            "Name": "argument1",
+                            "Type": {
+                                "Category": "Class",
+                                "Name": "Seat"
+                            }
+                        }
+                    ],
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "Unseated",
+                    "Parameters": [
+                        {
+                            "Name": "argument1",
+                            "Type": {
+                                "Category": "Class",
+                                "Name": "Seat"
+                            }
+                        }
+                    ],
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
                 },
@@ -17690,6 +17848,27 @@
                     "Tags": [
                         "ReadOnly"
                     ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "Climbable",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
                 }
             ],
             "Name": "Truss",
@@ -20722,6 +20901,27 @@
                 {
                     "Category": "Appearance",
                     "MemberType": "Property",
+                    "Name": "BorderMode",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Enum",
+                        "Name": "BorderMode"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
                     "Name": "BorderWidth",
                     "Security": {
                         "Read": "None",
@@ -21425,6 +21625,23 @@
                 }
             ],
             "Name": "BlendMode"
+        },
+        {
+            "Items": [
+                {
+                    "Name": "Inset",
+                    "Value": 0
+                },
+                {
+                    "Name": "Middle",
+                    "Value": 1
+                },
+                {
+                    "Name": "Outline",
+                    "Value": 2
+                }
+            ],
+            "Name": "BorderMode"
         },
         {
             "Items": [
@@ -23254,5 +23471,5 @@
             "Name": "VerticalAlignment"
         }
     ],
-    "Version": "2.0.19"
+    "Version": "2.0.20"
 }
