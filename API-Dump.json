@@ -4514,6 +4514,27 @@
                     "Tags": [
                         "ReadOnly"
                     ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "UseEffects",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
                 }
             ],
             "Name": "Explosion",
@@ -13953,6 +13974,21 @@
                 },
                 {
                     "MemberType": "Event",
+                    "Name": "Grabbed",
+                    "Parameters": [
+                        {
+                            "Name": "argument1",
+                            "Type": {
+                                "Category": "Class",
+                                "Name": "Physical"
+                            }
+                        }
+                    ],
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Event",
                     "Name": "Respawned",
                     "Parameters": [],
                     "Security": "None",
@@ -13989,6 +14025,21 @@
                             "Type": {
                                 "Category": "Class",
                                 "Name": "Team"
+                            }
+                        }
+                    ],
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Event",
+                    "Name": "Ungrabbed",
+                    "Parameters": [
+                        {
+                            "Name": "argument1",
+                            "Type": {
+                                "Category": "Class",
+                                "Name": "Physical"
                             }
                         }
                     ],
@@ -14198,6 +14249,27 @@
                     "ValueType": {
                         "Category": "Class",
                         "Name": "Truss"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Data",
+                    "MemberType": "Property",
+                    "Name": "Grabbing",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Class",
+                        "Name": "Physical"
                     },
                     "Tags": [
                         "ReadOnly"
@@ -23471,5 +23543,5 @@
             "Name": "VerticalAlignment"
         }
     ],
-    "Version": "2.0.21"
+    "Version": "2.0.22"
 }
