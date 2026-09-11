@@ -981,6 +981,13 @@
                                 "Category": "Primitive",
                                 "Name": "float"
                             }
+                        },
+                        {
+                            "Name": "passthroughMask",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "int64"
+                            }
                         }
                     ],
                     "ReturnType": {
@@ -1051,6 +1058,13 @@
                             "Type": {
                                 "Category": "Primitive",
                                 "Name": "float"
+                            }
+                        },
+                        {
+                            "Name": "passthroughMask",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "int64"
                             }
                         }
                     ],
@@ -3985,6 +3999,13 @@
                                 "Category": "Primitive",
                                 "Name": "Array"
                             }
+                        },
+                        {
+                            "Name": "passthroughMask",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "int64"
+                            }
                         }
                     ],
                     "ReturnType": {
@@ -4024,6 +4045,53 @@
                             "Type": {
                                 "Category": "Primitive",
                                 "Name": "Array"
+                            }
+                        }
+                    ],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "Array"
+                    },
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "RaycastGather",
+                    "Parameters": [
+                        {
+                            "Name": "origin",
+                            "Type": {
+                                "Category": "DataType",
+                                "Name": "Vector3"
+                            }
+                        },
+                        {
+                            "Name": "direction",
+                            "Type": {
+                                "Category": "DataType",
+                                "Name": "Vector3"
+                            }
+                        },
+                        {
+                            "Name": "maxDistance",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "float"
+                            }
+                        },
+                        {
+                            "Name": "ignoreList",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "Array"
+                            }
+                        },
+                        {
+                            "Name": "passthroughMask",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "int64"
                             }
                         }
                     ],
@@ -7665,6 +7733,13 @@
                                 "Category": "Primitive",
                                 "Name": "Array"
                             }
+                        },
+                        {
+                            "Name": "passthroughMask",
+                            "Type": {
+                                "Category": "Primitive",
+                                "Name": "int64"
+                            }
                         }
                     ],
                     "ReturnType": {
@@ -11162,6 +11237,27 @@
                 {
                     "Category": "Appearance",
                     "MemberType": "Property",
+                    "Name": "Vertical",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Vector3"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
                     "Name": "WalkSpeed",
                     "Security": {
                         "Read": "None",
@@ -13909,6 +14005,27 @@
                     "Category": "Appearance",
                     "MemberType": "Property",
                     "Name": "CollisionMask",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "int64"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "RayPassthrough",
                     "Security": {
                         "Read": "None",
                         "Write": "None"
@@ -18005,8 +18122,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18116,8 +18233,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18156,8 +18273,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18189,8 +18306,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18229,8 +18346,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18262,8 +18379,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18295,8 +18412,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18335,8 +18452,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18375,8 +18492,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18612,8 +18729,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -18889,8 +19006,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "TweenObject"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -21184,7 +21301,7 @@
                 }
             ],
             "Name": "VoiceBox",
-            "Superclass": "Part"
+            "Superclass": "Dynamic"
         },
         {
             "Members": [
@@ -21280,6 +21397,17 @@
                             }
                         }
                     ],
+                    "Security": "None",
+                    "ThreadSafety": "Unsafe"
+                },
+                {
+                    "MemberType": "Function",
+                    "Name": "GetFPS",
+                    "Parameters": [],
+                    "ReturnType": {
+                        "Category": "Primitive",
+                        "Name": "double"
+                    },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
                 },
@@ -23543,5 +23671,5 @@
             "Name": "VerticalAlignment"
         }
     ],
-    "Version": "2.0.22"
+    "Version": "2.0.23"
 }
