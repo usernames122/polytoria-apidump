@@ -1551,6 +1551,28 @@
                     ]
                 },
                 {
+                    "Category": "Data",
+                    "MemberType": "Property",
+                    "Name": "QuaternionOffset",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": false,
+                        "CanSave": false
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "DataType",
+                        "Name": "Quaternion"
+                    },
+                    "Tags": [
+                        "NotSerializable",
+                        "ReadOnly"
+                    ]
+                },
+                {
                     "Category": "Appearance",
                     "MemberType": "Property",
                     "Name": "RotationOffset",
@@ -23671,5 +23693,5 @@
             "Name": "VerticalAlignment"
         }
     ],
-    "Version": "2.0.23"
+    "Version": "2.0.24"
 }
