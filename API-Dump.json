@@ -6440,6 +6440,27 @@
                 {
                     "Category": "Appearance",
                     "MemberType": "Property",
+                    "Name": "AlwaysOnTop",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
                     "Name": "CastShadows",
                     "Security": {
                         "Read": "None",
@@ -6504,6 +6525,27 @@
                     "Category": "Appearance",
                     "MemberType": "Property",
                     "Name": "FaceCamera",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "FixedSize",
                     "Security": {
                         "Read": "None",
                         "Write": "None"
@@ -6669,6 +6711,27 @@
                     "ValueType": {
                         "Category": "DataType",
                         "Name": "Vector2"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "Visible",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
                     },
                     "Tags": [
                         "ReadOnly"
@@ -9438,7 +9501,7 @@
                 }
             ],
             "Name": "InteractionPrompt",
-            "Superclass": "Physical"
+            "Superclass": "Dynamic"
         },
         {
             "Members": [],
@@ -11324,8 +11387,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11350,8 +11413,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11376,8 +11439,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11402,8 +11465,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11428,8 +11491,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11454,8 +11517,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11480,8 +11543,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11506,8 +11569,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11532,8 +11595,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11558,8 +11621,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -11584,8 +11647,8 @@
                         }
                     ],
                     "ReturnType": {
-                        "Category": "Primitive",
-                        "Name": "null"
+                        "Category": "Class",
+                        "Name": "NetMessage"
                     },
                     "Security": "None",
                     "ThreadSafety": "Unsafe"
@@ -17622,6 +17685,27 @@
                 {
                     "Category": "Appearance",
                     "MemberType": "Property",
+                    "Name": "AlwaysOnTop",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
                     "Name": "Color",
                     "Security": {
                         "Read": "None",
@@ -17644,6 +17728,27 @@
                     "Category": "Appearance",
                     "MemberType": "Property",
                     "Name": "FaceCamera",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "FixedSize",
                     "Security": {
                         "Read": "None",
                         "Write": "None"
@@ -17869,6 +17974,27 @@
                     "ValueType": {
                         "Category": "Enum",
                         "Name": "TextVerticalAlignment"
+                    },
+                    "Tags": [
+                        "ReadOnly"
+                    ]
+                },
+                {
+                    "Category": "Appearance",
+                    "MemberType": "Property",
+                    "Name": "Visible",
+                    "Security": {
+                        "Read": "None",
+                        "Write": "None"
+                    },
+                    "Serialization": {
+                        "CanLoad": true,
+                        "CanSave": true
+                    },
+                    "ThreadSafety": "Unsafe",
+                    "ValueType": {
+                        "Category": "Primitive",
+                        "Name": "bool"
                     },
                     "Tags": [
                         "ReadOnly"
@@ -19543,6 +19669,8 @@
                         "Name": "UIScale"
                     },
                     "Tags": [
+                        "NotReplicated",
+                        "NotSerializable",
                         "ReadOnly"
                     ]
                 },
@@ -23693,5 +23821,5 @@
             "Name": "VerticalAlignment"
         }
     ],
-    "Version": "2.0.24"
+    "Version": "2.0.25"
 }
